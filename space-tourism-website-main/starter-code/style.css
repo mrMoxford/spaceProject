@@ -171,7 +171,7 @@ select {
     display:block;
 }
 .container {
-    padding-inline: 2em; 
+    padding-inline: 2rem; 
     margin-inline: auto; 
     max-width: 80rem;
 }
@@ -644,8 +644,8 @@ body{
 
 
 .grid-container{
-    text-align: center;
     display: grid;
+    text-align: center;
     place-items:center;
     padding-inline: 1rem;
     padding-bottom:4rem;
@@ -703,8 +703,7 @@ body{
 
 .grid-container--crew{
     --flow-gap:3rem; 
-    align-content:space-evenly; 
-    justify-content: space-evenly;
+   place-items: center;
     grid-template-areas:
     'title'
     'image'
@@ -715,13 +714,16 @@ body{
 .grid-container--crew > picture {
     grid-area: image;
     max-width:60%;
-    border-bottom: 1px solid hsl(var(--clr-white)/.2)
+  
+
+    /* border-bottom: 1px solid hsl(var(--clr-white)/.2) */
 }
 .grid-container--crew > .dot-indicators {
     grid-area: dots;
 }
 .grid-container--crew > .crew-info {
     grid-area: content;
+    
 }
 
 
@@ -771,6 +773,10 @@ body{
     color:hsl(var(--clr-accent));
     max-width: 45ch;
 }
+
+
+
+
 
 /* ----------------------------- */
 /* -------{media queries}------ */
@@ -836,7 +842,7 @@ body{
 }
 .grid-container--destination >picture ,
 .grid-container--crew >picture {
-    max-width:80%;
+max-width: 80% ;
   
 }
 .destination-meta{
@@ -850,23 +856,28 @@ body{
 
 
 .grid-container--crew{
-    grid-template-columns: minmax(1em ,1fr) minmax(0 , 40rem) minmax(0 , 20rem) minmax(1em ,1fr);
+    grid-template-columns: minmax(1rem ,1fr) repeat(2,minmax(0, 30rem)) minmax(1rem ,1fr);
     justify-items: start;
-   
     grid-template-areas:
     '.title title.'
-    '. content image.'
+    '.content image.'
     '.dots image.';
     
 }
 
 .grid-container--crew > picture{
-    align-self:end;
+    height: 100%;
     grid-column:span 2;
 }
 
-
-
+.crew-name{
+ width:max-content;
+}
+.crew-img{
+    height: 40rem;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
 
 /* ------------------------ */
 /* technology grid layout */
