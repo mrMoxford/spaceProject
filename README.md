@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](../space-tourism-website-main/src/assets/shared/spaceProject.png)
+![](./space-tourism-website-main/src/assets/shared/spaceProject.png)
 
 ### Links
 
