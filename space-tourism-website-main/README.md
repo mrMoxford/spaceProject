@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](spaceProject/space-tourism-website-main/src/assets/shared/spaceProject.png?raw=true)
+![](../space-tourism-website-main/src/assets/shared/spaceProject.png)
 
 ### Links
 
@@ -69,6 +69,6 @@ I would like to continue this project and incorporate 3-d models using 3js in th
 
 ## Acknowledgments
 
-hats off to Kevin Powell"s Youtube which has taught me alot about CSS and how to know go crazy trying to tame it.
+hats off to Kevin Powell"s Youtube which has taught me alot about CSS and how to not go crazy trying to tame it.
 
 
